@@ -425,37 +425,10 @@ I am always ready to learn about new technologies and I love taking on challenge
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
 			// Returns a valid button ID.
 		//};
+		embedded_svc.settings.prepopulatedPrechatFields = {Account : '0015f00000H3cuEAAR', CurrencyIsoCode: 'USD'}
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-    embedded_svc.settings.extraPrechatInfo = [{
-  "entityFieldMaps": [{
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"LastName",
-    "isExactMatch":true,
-    "label":"Last Name"
-  }, {
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"FirstName",
-    "isExactMatch":true,
-    "label":"First Name"
-  }, {
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"Email",
-    "isExactMatch":true,
-    "label":"Email"
-  }, {
-    "doCreate":true,
-    "doFind":true,
-    "fieldName":"Phone",
-    "isExactMatch":true,
-    "label":"Phone"
-  }],
-  "entityName":"Contact"
-}];
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
